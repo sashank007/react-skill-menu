@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: stretch;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+/**
+ * Icon
+ */
+
+/* .icon {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: sans-serif;
+} */
+
+/* .icon:nth-child(1) { background: cornflowerblue; }
+.icon:nth-child(2) { background: salmon; }
+.icon:nth-child(3) { background: gray; } */
+
+/**
+ * The "shine" element
+ */
+
+.icon:after {
+  animation: shine 3s ease-in-out infinite;
+  animation-fill-mode: forwards;
+  content: "";
+  position: absolute;
+  top: -210%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+/* 
+.icon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+} */
+/* Hover state - trigger effect */
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 0;
+}
+
+.icon::hover:after {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes shine {
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+  }
+}
+
+.UqLTw {
+  animation: colorChange infinite;
+  animation-duration: 5s;
+  box-shadow: 0 0 15px #c4c0c0;
+}
+.eubVzG {
+  animation: colorChange infinite;
+  animation-duration: 5s;
+  box-shadow: 0 0 10px #c4c0c0;
+}
+@keyframes colorChange {
+  0% {
+    border-color: #c8cdd1;
+  }
+  50% {
+    border-color: #2c3e50;
+  }
+  100% {
+    border-color: #c8cdd1;
+  }
+  /* 0% {
+    border-color: e2a61e;
+  }
+  25% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: blue;
+  }
+  75% {
+    border-color: green;
+  }
+  100% {
+    border-color: red;
+  } */
+}
