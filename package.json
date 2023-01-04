@@ -41,6 +41,6 @@
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "react-fontawesome": "^1.6.1",
-    "svg-inline-loader": "^0.8.0"
+    "svg-inline-loader": "^0.8.2"
   }
 }
